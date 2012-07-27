@@ -1,0 +1,64 @@
+@mixin opacity ($opacity: 0.5) {
+	filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=#{round($opacity * 100)})");
+	
+	opacity: $opacity; }
+
+@mixin border-radius ($radius: 3px) {
+  -webkit-border-radius: unquote($radius);
+     -moz-border-radius: unquote($radius);
+      -ms-border-radius: unquote($radius);
+       -o-border-radius: unquote($radius);
+          border-radius: unquote($radius); }
+
+@mixin text-shadow ($shadow) {
+	-webkit-text-shadow: unquote($shadow);
+	   -moz-text-shadow: unquote($shadow);
+	    -ms-text-shadow: unquote($shadow);
+	     -o-text-shadow: unquote($shadow);
+	        text-shadow: unquote($shadow); }
+
+@mixin box-shadow ($shadow) {
+	-webkit-box-shadow: unquote($shadow);
+	   -moz-box-shadow: unquote($shadow);
+	    -ms-box-shadow: unquote($shadow);
+	     -o-box-shadow: unquote($shadow);
+            box-shadow: unquote($shadow); }
+
+@mixin origin ($origin) {
+	-webkit-transform-origin: unquote($origin);
+	   -moz-transform-origin: unquote($origin);
+	    -ms-transform-origin: unquote($origin);
+	     -o-transform-origin: unquote($origin);
+	         transform-orgin: unquote($origin); }
+	        
+@mixin transform ($trans) {
+	-webkit-transform: unquote($trans);
+	   -moz-transform: unquote($trans);
+	    -ms-transform: unquote($trans);
+	     -o-transform: unquote($trans);
+	        transform: unquote($trans); }
+
+@mixin transition ( $trans: 0.5s all ease-in) {
+	-webkit-transition: unquote($trans);
+       -moz-transition: unquote($trans);
+        -ms-transition: unquote($trans);
+         -o-transition: unquote($trans);
+	       	transition: unquote($trans); }
+
+@mixin animation ($anim) {
+	-webkit-animation: unquote($anim);
+       -moz-animation: unquote($anim);
+        -ms-animation: unquote($anim);
+         -o-animation: unquote($anim);
+	       	animation: unquote($anim); }
+
+@mixin gradient ($from, $to) {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to)); 
+	background-image: -webkit-linear-gradient(top, $from, $to); 
+	background-image:    -moz-linear-gradient(top, $from, $to); 
+	background-image:     -ms-linear-gradient(top, $from, $to); 
+	background-image:      -o-linear-gradient(top, $from, $to); 
+	background-image:         linear-gradient(top, $from, $to); 
+	
+    -ms-filter:         "progid:DXImageTransform.Microsoft.gradient (startColorstr='#{$from}', endColorstr='#{$to}')";
+	    filter: unquote("progid:DXImageTransform.Microsoft.gradient (startColorstr='#{$from}', endColorstr='#{$to}')");  }
