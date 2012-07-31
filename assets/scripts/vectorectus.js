@@ -1,21 +1,21 @@
 $(window).ready(function() { 
-    $('[data-vectorectus]').vectorectus({
-        
-    });
+    $('[data-vectorectus]').vectorectus("");
 });
 
 (function ($) {
     $.fn.extend({
-        vectorectus : function (options) {
+    
+        vectorectus : function (shapesFile) {
             var SelectorToData = function (selector) {
-                names = selector.split('.') || ['', ''];          
+                var names = selector.split('.') || ['', ''];          
                 return shapes [names[0]] [names[1]];
-            };           
-            
-            
-            var defaults = { };             
-            var options = $.extend(defaults, options),
-                index   = 0;
+            } 
+        
+            loadVectorFile : function (file) {
+                
+            },
+                    
+            index   = 0;
             
             return this.each(function() {
                 if ($(this).attr('id') === undefined) 
