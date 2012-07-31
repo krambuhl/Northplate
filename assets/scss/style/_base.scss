@@ -15,36 +15,35 @@ $gutter: 12px;
 
 // Site-wide Variables
 
-$site-fontfamily: "bariol", sans-serif;
+$site-fontfamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
 // COLORS
 
-$site-color-bg:   #000;
-$site-color-font: #fff;
+$site-color-bg:   #fff;
+$site-color-font: #000;
 	
 $selection-color: #b7d6ee; // when a user highlights text this is the super duper color!
 
 
 body {		
-    min-width: 1680px;
     background: $site-color-bg;
-	color: $site-color-font;
-
-	text-transform: none;
-	text-decoration: none;
-	text-align: left;
+    color: $site-color-font;
+    
+    text-transform: none;
+    text-decoration: none;
+    text-align: left;
 	
-	word-wrap: normal;
+    word-wrap: normal;
 	
-	font-variant: normal;
-	font-style: normal;
-	font-weight: 500;
-	font-size: $fontsize-normal;
-	font-family: $site-fontfamily;
+    font-variant: normal;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $fontsize-normal;
+    font-family: $site-fontfamily;
 			
-	-webkit-font-smoothing: antialiased;
-	-webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: $selection-color; 
 }
 
@@ -59,7 +58,7 @@ a        { color: $site-color-font; text-decoration: underline; }
 a:hover  { color: $site-color-font; text-decoration: underline; }
 a:active { color: $site-color-font; text-decoration: underline; }
 
-em, cite { font-style: italic; font-weight: normal; }
+em, cite { font-style: italic; font-weight: 500; }
 hr       { display: none; }
 
 
