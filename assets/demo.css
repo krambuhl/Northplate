@@ -1,0 +1,25 @@
+[data-vectorectus] {
+    width: 250px; 
+    height: 250px; 
+    
+    margin: 120px auto 18px auto;
+    
+    color: white; 
+}
+
+h1 { 
+    text-align: center; 
+    text-transform: uppercase; 
+    
+    font-size: 48px; 
+    font-weight: 500;
+}
+
+p {
+    width: 320px; 
+    margin: 12px auto; 
+    
+    text-align: center; 
+    font-size: 16px;
+    line-height: 20px;
+}
