@@ -1,10 +1,14 @@
-[data-vectorectus] {
+.icon {
     width: 250px; 
     height: 250px; 
     
     margin: 120px auto 18px auto;
+}
     
-    color: white; 
+path {
+    fill: white;
+    stroke: none;
+    stroke-width: 0;
 }
 
 h1 { 
