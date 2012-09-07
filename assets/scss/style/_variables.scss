@@ -1,0 +1,74 @@
+//font sizes
+
+$baseline: 14px;
+$fontsize-xsmall: $baseline / 2;
+$fontsize-small:  $baseline / (1.5);
+$fontsize-normal: $baseline;
+$fontsize-medium: $baseline * 2;
+$fontsize-large:  $baseline * 3;
+
+// site spacing, keep it consistant bitches
+
+$spacing: 12px;
+$spacing-double: $spacing * 2;
+$spacing-half:   $spacing / 2;
+
+
+// ***** 
+//   Site-wide Variables
+// *****
+
+$site-fontfamily: Helvetica, Arial, Tahoma, sans-serif;
+
+// COLORS
+
+$site-color-bg:   #fff;
+$site-color-font: #333;
+	
+$selection-color: #eeccb7; // when a user highlights text this is the super duper color!
+ 
+ 
+// WE'RE ON THE GRID, MOTHER FUCKER!
+
+$max: 18;
+$column: 48px;
+$gutter: 12px;
+$gridtotes: $column + $gutter;
+
+@mixin grid ($span, $offset: 0px) { width:  ($column * $span) + ($gutter * ($span - 1)) + $offset; }
+
+// responsive breakpoints 
+
+$respond-mobile: "only screen and (max-width: 480px)";
+$respond-tablet: "only screen (min-width: 481px)  and (max-width: 768px)";
+$respond-small:  "only screen (min-width: 769px)  and (max-width: 1152px)"; // small screens
+$respond-screen: "only screen (min-width: 1153px) and (max-width: 1440px)"; // standard deploy
+$respond-large:  "only screen (min-width: 1441px) and (max-width: 1919px)";  // large screens
+$respond-huge:   "only screen (min-width: 1920px)";  // huge screens (HD and up)
+
+// responsive special
+
+$respond-retina:  "only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi)";
+
+// respond to the grid
+
+@mixin respond ($media) {
+    @if ($media == mobile) { @media #{$respond-mobile} { @content; }}
+    @if ($media == tablet) { @media #{$respond-tablet} { @content; }}
+    @if ($media == small)  { @media #{$respond-small}  { @content; }}
+    @if ($media == screen) { @media #{$respond-screen} { @content; }}
+    @if ($media == large)  { @media #{$respond-large}  { @content; }}
+    @if ($media == huge)   { @media #{$respond-huge}   { @content; }}
+}
+
+//  respond the grid
+
+@mixin rgrid ($media) {
+    @if ($media == mobile) { width: 100%; }
+    @if ($media == tablet) { @include grid(8);  }
+    @if ($media == small)  { @include grid(12); }
+    @if ($media == screen) { @include grid(18); }
+    @if ($media == large)  { @include grid(24); }
+    @if ($media == huge)   { @include grid(32); }
+}
+

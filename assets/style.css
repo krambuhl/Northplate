@@ -1,4 +1,4 @@
-/* line 12, scss/includes/_reset.scss */
+/* line 17, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -8,68 +8,65 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-/* line 24, scss/includes/_reset.scss */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-/* line 27, scss/includes/_reset.scss */
-body {
+/* line 22, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
   line-height: 1;
 }
 
-/* line 30, scss/includes/_reset.scss */
+/* line 24, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 33, scss/includes/_reset.scss */
-blockquote, q {
-  quotes: none;
-}
-
-/* line 37, scss/includes/_reset.scss */
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-/* remember to highlight inserts somehow! */
-/* line 43, scss/includes/_reset.scss */
-ins {
-  text-decoration: none;
-}
-
-/* line 46, scss/includes/_reset.scss */
-del {
-  text-decoration: line-through;
-}
-
-/* line 50, scss/includes/_reset.scss */
+/* line 26, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 29, scss/style/_base.scss */
+/* line 28, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 2, scss/style/_base.scss */
 body {
-  background: #333333;
-  color: white;
+  background: white;
+  color: #333333;
   text-transform: none;
   text-decoration: none;
   text-align: left;
@@ -77,64 +74,64 @@ body {
   font-variant: normal;
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-family: Helvetica, Arial, Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: #b7d6ee;
+  -webkit-tap-highlight-color: #eeccb7;
 }
 
-/* line 50, scss/style/_base.scss */
+/* line 23, scss/style/_base.scss */
 ::selection {
-  background: #b7d6ee;
+  background: #eeccb7;
 }
 
-/* line 51, scss/style/_base.scss */
+/* line 24, scss/style/_base.scss */
 ::-moz-selection {
-  background: #b7d6ee;
+  background: #eeccb7;
 }
 
-/* line 52, scss/style/_base.scss */
+/* line 25, scss/style/_base.scss */
 img::selection {
-  background: #b7d6ee;
+  background: #eeccb7;
 }
 
-/* line 53, scss/style/_base.scss */
+/* line 26, scss/style/_base.scss */
 img::-moz-selection {
-  background: #b7d6ee;
+  background: #eeccb7;
 }
 
-/* line 57, scss/style/_base.scss */
+/* line 30, scss/style/_base.scss */
 a {
-  color: white;
-  border-bottom: 1px dotted white;
+  color: #333333;
+  border-bottom: 1px dotted #333333;
   text-decoration: none;
 }
 
-/* line 58, scss/style/_base.scss */
+/* line 31, scss/style/_base.scss */
 a:hover {
-  color: white;
-  border-bottom: 1px solid white;
+  color: #333333;
+  border-bottom: 1px solid #333333;
 }
 
-/* line 59, scss/style/_base.scss */
+/* line 32, scss/style/_base.scss */
 a:active {
-  color: white;
-  border-bottom: 1px solid white;
+  color: #333333;
+  border-bottom: 1px solid #333333;
 }
 
-/* line 61, scss/style/_base.scss */
+/* line 34, scss/style/_base.scss */
 em, cite {
   font-style: italic;
   font-weight: 500;
 }
 
-/* line 62, scss/style/_base.scss */
+/* line 35, scss/style/_base.scss */
 hr {
   display: none;
 }
 
-/* line 68, scss/style/_base.scss */
+/* line 41, scss/style/_base.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -142,42 +139,42 @@ hr {
   *behavior: url(assets/library/boxsizing.htc);
 }
 
-/* line 70, scss/style/_base.scss */
+/* line 43, scss/style/_base.scss */
 .left {
   float: left;
 }
 
-/* line 71, scss/style/_base.scss */
+/* line 44, scss/style/_base.scss */
 .right {
   float: right;
 }
 
-/* line 73, scss/style/_base.scss */
+/* line 46, scss/style/_base.scss */
 .block {
   display: block;
 }
 
-/* line 74, scss/style/_base.scss */
+/* line 47, scss/style/_base.scss */
 .inline {
   display: inline-block;
 }
 
-/* line 76, scss/style/_base.scss */
+/* line 49, scss/style/_base.scss */
 .relative {
   position: relative;
 }
 
-/* line 77, scss/style/_base.scss */
+/* line 50, scss/style/_base.scss */
 .absolute {
   position: absolute;
 }
 
-/* line 78, scss/style/_base.scss */
+/* line 51, scss/style/_base.scss */
 .fixed {
   position: fixed;
 }
 
-/* line 80, scss/style/_base.scss */
+/* line 53, scss/style/_base.scss */
 .clearfix {
   overflow: hidden;
   *zoom: 1;

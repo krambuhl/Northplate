@@ -1,30 +1,3 @@
-$baseline: 16px;
-$fontsize-xsmall: $baseline / 2;
-$fontsize-small:  $baseline / (1.5);
-$fontsize-normal: $baseline;
-$fontsize-medium: $baseline * 2;
-$fontsize-large:  $baseline * 3;
-
-// WE'RE ON THE GRID, MOTHER FUCKER!
-
-$column-max: 17;
-$column: 48px;
-$gutter: 12px;
-
-@mixin grid ($span, $offset: 0px) { width:  ($column * $span) + ($gutter * ($span - 1)) + $offset; }
-
-// Site-wide Variables
-
-$site-fontfamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-
-// COLORS
-
-$site-color-bg:   #333;
-$site-color-font: #fff;
-	
-$selection-color: #b7d6ee; // when a user highlights text this is the super duper color!
-
 
 body {		
     background: $site-color-bg;
