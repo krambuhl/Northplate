@@ -40,11 +40,11 @@ $gridtotes: $column + $gutter;
 // responsive breakpoints 
 
 $respond-mobile: "only screen and (max-width: 480px)";
-$respond-tablet: "only screen (min-width: 481px)  and (max-width: 768px)";
-$respond-small:  "only screen (min-width: 769px)  and (max-width: 1152px)"; // small screens
-$respond-screen: "only screen (min-width: 1153px) and (max-width: 1440px)"; // standard deploy
-$respond-large:  "only screen (min-width: 1441px) and (max-width: 1919px)";  // large screens
-$respond-huge:   "only screen (min-width: 1920px)";  // huge screens (HD and up)
+$respond-tablet: "only screen and (min-width: 481px)  and (max-width: 768px)";
+$respond-small:  "only screen and (min-width: 769px)  and (max-width: 1152px)"; // small screens
+$respond-screen: "only screen and (min-width: 1153px) and (max-width: 1440px)"; // standard deploy
+$respond-large:  "only screen and (min-width: 1441px) and (max-width: 1919px)";  // large screens
+$respond-huge:   "only screen and (min-width: 1920px)";  // huge screens (HD and up)
 
 // responsive special
 
