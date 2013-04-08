@@ -1,29 +1,28 @@
-
-body {		
+body {
     background: $site-color-bg;
     color: $site-color-font;
-    
+
     text-transform: none;
     text-decoration: none;
     text-align: left;
-	
+
     word-wrap: normal;
-	
+
     font-variant: normal;
     font-style: normal;
     font-weight: 300;
     font-size: $fontsize-normal;
     font-family: $site-fontfamily;
-			
+
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: $selection-color; 
+    -webkit-tap-highlight-color: $selection-color;
 }
 
 ::selection 	 	{ background: $selection-color; }
 ::-moz-selection 	{ background: $selection-color; }
 img::selection 		{ background: $selection-color; }
-img::-moz-selection	{ background: $selection-color; } 
+img::-moz-selection	{ background: $selection-color; }
 
 
 
@@ -39,15 +38,3 @@ hr       { display: none; }
 
 
 * { @include box-sizing(border-box); *behavior: url(assets/library/boxsizing.htc); }
-
-.left  { float: left; }
-.right { float: right; }
-
-.block { display: block; }
-.inline { display: inline-block; }
-
-.relative { position: relative; }
-.absolute { position: absolute; }
-.fixed { position: fixed;}
-
-.clearfix { @include clearfix(); }

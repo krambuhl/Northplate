@@ -2,10 +2,12 @@
 @import "compass/css3";
 @import "compass/reset";
 
-@import 'style/variables';
-@import "style/base";
-@import "style/layout";
-@import "style/state";
+@import 'base/variables';
+@import 'base/grid';
+@import "base/base";
+@import "base/layout";
+@import "base/state";
 
 //@import "standard/";
+
 //@import "modules/";
